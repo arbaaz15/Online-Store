@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+<title>Signup | Online Store</title>
+ 
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+
+
+<link href="../css/bootstrap.css" rel="stylesheet">
+
+
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="css/signup.css">
+<link href="css/style.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="index.html">Online Store</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="about.html"> <i class="fa fa-info-circle" aria-hidden="true"></i> About</a></li>
+                   
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+<!--======================================================================================================================================-->
+
+
+
+<div id="content">
+
+
+    <div class="signup-form">
+
+        <form id="signupform">
+
+		        <h2>Register</h2>
+                 <p class="hint-text">Create your account. It's free and only takes a minute.</p>
+
+
+<!--======================================================================================================================================-->
+                 
+
+     <div id="google-signup">
+            <!-- The surrounding HTML is left untouched by FirebaseUI.
+         Your app may use that space for branding, controls and other customizations.-->
+    <div id="firebaseui-auth-container"></div>
+    <div id="loader">Loading...</div>
+        
+         </div>
+
+         
+ <!--======================================================================================================================================-->
+       
+        
+<div class="vertical"><b id="verticalline">OR</b></div>
+<div class="or-seperator"><b id="horizontalline">OR</b></div>    
+
+
+<div id="custom-signup">
+    <div id="wrapper">
+        <div class="form-group">
+			<div class="row">
+				<div class="col-xs-6"><input type="text" class="form-control" id="first_name" placeholder="First Name" required></div>
+				<div class="col-xs-6"><input type="text" class="form-control" id="last_name" placeholder="Last Name" required></div>
+			</div>        	
+        </div>
+
+        <div class="form-group">
+        	<input type="email" class="form-control" id="email" placeholder="Email" required>
+        </div>
+
+        <div class="form-group">
+            <input type="phone" class="form-control" id="phone" placeholder="Phone" required>
+        </div> 
+
+		<div class="form-group">
+            <input type="password" class="form-control" id="password" placeholder="Password" required>
+        </div>
+
+		<div class="form-group">
+            <input type="password" class="form-control" id="confirm_password" placeholder="Confirm Password" required>
+        </div>  
+        
+
+
+        <div class="form-group" id="gender">
+         <label class="radio-inline">
+            <input type="radio" name="browser" required onclick="myFunction(this.value)" value="Male">Male
+          </label>
+         <label class="radio-inline">
+            <input type="radio" name="browser" required onclick="myFunction(this.value)" value="Female">Female
+          </label>
+
+        <input type="text" id="result" style="display: none;">
+
+
+
+          <script>
+            function myFunction(browser) {
+                document.getElementById("result").value = browser;
+            }
+            </script>
+
+        </div>
+
+
+
+        <div class="form-group">
+			<label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" id="register-btn">Register Now</button>
+        </div>
+
+        <div class="form-group">
+        <div class="text-center">Already have an account? <a href="#">Sign in</a></div>
+        </div>
+    
+        </div>
+
+    </div>
+
+
+</form>
+
+
+    </div>
+
+</div>
+
+
+
+<!--======================================================================================================================================-->
+
+
+<footer>
+    <div class="container">
+        <center>
+            <p>Copyright &copy; Online Store. All Rights Reserved  |  Contact Us: +91 90000 00000</p>	
+        </center>
+    </div>
+</footer>
+
+
+
+
+
+<!--Firebase CDN-->
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-database.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>
+
+
+
+<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
+
+
+
+
+        <script src="js/signup.js"></script>
+
+
+</body>
+</html>

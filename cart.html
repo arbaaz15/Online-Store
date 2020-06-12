@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cart | Online Store</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/signup.css">
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha256-PZLhE6wwMbg4AB3d35ZdBF9HD/dI/y4RazA3iRDurss=" crossorigin="anonymous" />
+
+         <!-- CSS -->
+   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    </head>
+
+
+    <body>
+
+        <div class="container-fluid" id="content">
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>                        
+                        </button>
+                        <a class="navbar-brand" href="index.html">Online Store</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="about.html"> <i class="fa fa-info-circle" aria-hidden="true"></i> About</a></li>
+                           
+                            <li><a href = "settings.html"><span class = "glyphicon glyphicon-user"></span> Settings</a></li>
+                            <li><a href = "index.html" id="logout"><span class = "glyphicon glyphicon-log-in"></span> Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+<!--***************************************************************
+
+
+<div id="imags" style="margin-top:50px ;" >
+
+    
+    <button type="submit" id="btn-1">Load</button><br><br><br><br><br><br>
+    <button type="submit" id="btn-2">Load</button>
+    </div>
+
+    
+   *************************************************************************-->
+            <div class="row decor_bg">
+                <div class="col-md-6 col-md-offset-3">
+                 
+
+                <div style="background: rgba(0, 0, 0, 0.705); margin-top: 20px; border-radius:8px 8px 8px 8px;padding: 20px;">
+               <center>
+                    <h2>Product Description</h2>
+                </center>        
+
+                <hr style="border-top: 2px dashed white;">  
+
+                
+                    <table class="table">
+                    
+                            <div  id="desc" style="padding: 50px;   background: rgb(214, 207, 207); border-radius: 10px; color: black;">
+                                <p id="f1">Brand :</p>
+                                <p id="f2">Model :</p>
+                                <p id="f3">Serial No :</p>
+                                <p id="f4">Mfg Year :</p>
+                                <p id="f5">Type :</p>
+                                <p id="f6">Warranty :</p>
+                                <p id="f7">Total :</p>
+                            </div>
+
+                
+                            <hr style="border-top: 2px dashed white;">   
+
+            <div class="parent-access">
+<center>
+                    <div  id="imags">
+    
+                            <a href="" target="_blank">
+                                <img src="" class="img-fluid">
+                                </a>
+                    </div>
+</center>
+            </div>
+                    
+                        <tbody>
+                            <tr>
+                                <td>
+
+                                </td> 
+                                <center>
+                                <button style="margin-bottom: 50px;" type="submit" onclick="billingpage()" id="register-btn">Confirm</button></td>
+                                </center>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+
+        <footer>
+            <div class="container">
+                <center>
+                    <p>Copyright &copy; Online Store. All Rights Reserved  |  Contact Us: +91 90000 00000</p>	
+                </center>
+            </div>
+        </footer>
+
+
+
+        <script>
+            $(document).ready(function() {
+      $('.parent-access').magnificPopup({
+          type:'image',
+          delegate:'a',
+          gallery : {
+                enabled : true
+          }
+       });
+    });
+        </script>
+
+
+        <!--jQuery form web-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+
+
+ <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase.js"></script>
+
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-firestore.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha256-P93G0oq6PBPWTP1IR8Mz/0jHHUpaWL0aBJTKauisG7Q=" crossorigin="anonymous"></script>
+
+  <!-- JavaScript -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+ <script src="js/imageretrive.js"></script> 
+
+        <script src="js/logout.js"></script>
+
+        
+    </body>
+</html>

@@ -1,0 +1,17 @@
+External JavaScript
+--------------------------
+
+swipe.js ---> 3D image slider 
+flickable.js  ----> flickable carousels
+magnific.js  ----> Image magnification window
+
+
+
+
+
+External CSS
+---------------------
+
+font-Awsome ---> icons 
+animate.css  CDN ---> animated bounceInLeft in index and product page
+

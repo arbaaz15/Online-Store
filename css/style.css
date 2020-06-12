@@ -1,0 +1,332 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "sans-serif","Lato","Helvetica Neue",Helvetica,Arial,;
+    font-weight: 700;
+}
+
+#content{
+    min-height: 710px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#banner_image {
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../img/intro-bg_1.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#banner_content {
+    position: relative;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    margin-top: 12%;
+    margin-bottom: 12%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    max-width: 660px;
+}
+
+#item_list {
+    padding-top: 50px;
+}
+
+/*This code ensures that when we navigate to a particular section of a page, the section does not get lost behind the header*/
+#cameras:before, #watches:before, #shirts:before{
+    display: block; 
+    content: " "; 
+    margin-top: -85px; 
+    height: 85px; 
+    visibility: hidden;
+}
+
+
+#login-panel .panel-footer{
+    font-weight:normal;
+}
+
+footer {
+    padding: 10px 0;
+    background-color: #101010;
+    color:#9d9d9d;
+    bottom: 0;
+    width: 100%;
+}
+
+.red{
+    color:red;
+}
+
+#settings-container{
+    margin-bottom:10px;
+}
+
+.navbar-brand{
+    font-size:20px;
+}
+
+
+
+
+.remove_item_link{
+    color:#0000ff;
+}
+
+
+
+#login_text{
+    text-align: left;
+    margin-bottom: 30px;
+    color: #636363;;
+}
+
+
+
+.row{
+    margin-top: 50px;
+}
+
+
+
+
+
+@media(max-width:768px) {
+  #banner_content {
+      padding-bottom: 15%;
+  }
+  footer{
+      text-align:left;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*========================================================================================================================================*/
+/* Billing Address after cart ----css */
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.row1 {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container1 {
+
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  padding-top: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+.container2 {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 5px 20px 15px 20px;
+  padding-top: 10px;
+  border: 2px dashed lightgrey;
+  border-radius: 3px;
+}
+
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: #101010;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid rgb(19, 18, 18);
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+
+
+
+
+
+#responselogin{
+  float: center;
+   background: rgba(255, 255, 255, 0.8); 
+    width: 600px;
+     margin-top: 50px;
+      border-radius:10px;
+      padding: 20px;
+}
+
+
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+  #responselogin{
+    width: 300px;
+    margin-top: 50px;
+    float: center;
+  }
+}
+
+
+
+
+@media (max-width: 500px) {
+#retrivedimg
+{
+  width: 250px;
+  height: 250px;
+}
+
+}
+
+
+
+@media (max-width: 400px) {
+  #retrivedimg
+  {
+    width: 200px;
+    height: 200px;
+  }
+
+  #responselogin{
+    width: 300px;
+    margin-top: 50px;
+  }
+  
+  }
+
+
+  @media (max-width: 320px) {
+  #responselogin{
+    width: 250px;
+    margin-top: 50px;
+    float: center;
+  }
+}
+
+/*===========================================================================================================================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#tabledisplay{
+  padding-top: 30px;
+}
+
+td{
+  padding: 30px;
+}
+
+
+th:hover,td:hover{
+  color: rgb(0, 0, 0);
+}
+/*
+.inputfieldtextcolor{
+  color: #101010;
+}*/
